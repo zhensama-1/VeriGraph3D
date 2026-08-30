@@ -1,0 +1,11 @@
+﻿task_id,category,accepted,decision,actions,successful_actions,repairs,rollbacks,elapsed_seconds,final_revision,error
+blender_move_01,move,True,accept,1,1,0,0,7.360879800049588,1,
+blender_rotate_01,rotate,True,accept,1,1,0,0,6.878102199989371,1,
+blender_scale_01,scale,True,accept,1,1,0,0,6.468384000007063,1,
+blender_place_01,place_on,True,accept,1,1,0,0,6.2716667000204325,1,
+blender_material_01,material,True,accept,1,1,0,0,6.386456600041129,1,
+blender_camera_01,camera,True,accept,1,1,0,0,6.372308199992403,1,
+blender_light_01,light,True,accept,1,1,0,0,6.674958400079049,1,
+blender_create_01,create,False,local_repair,1,1,0,1,6.509584699990228,0,
+blender_delete_01,delete,True,accept,1,1,0,0,6.368665299960412,1,
+blender_compound_01,compound,True,accept,3,3,0,0,16.56796489993576,3,

@@ -1,0 +1,11 @@
+{
+  "before_visibility": 0.0,
+  "after_visibility": 1.0,
+  "information_gain": 0.9,
+  "camera_location": [
+    7.0,
+    0.0,
+    3.8500000000000005
+  ],
+  "action_status": "success"
+}

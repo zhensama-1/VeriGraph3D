@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "environment": {
+    "python": "3.11.7",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "blender_executable": "E:\\blender\\blender.exe",
+    "source_blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\abws_blender24_fixture.blend",
+    "source_sha256": "c7e8874ad0fca9f7f68ffa7a96f732315bd54569c8a883bd1c1fd4addcf5cd9c",
+    "dataset": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\examples\\blender_tasks_expanded.json"
+  },
+  "wall_seconds": 6.71230219991412,
+  "runs": [
+    {
+      "task_id": "blender_create_01",
+      "category": "create",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.643951499951072,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_create_retry\\blender_create_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_create_retry\\blender_create_01\\result.blend"
+    }
+  ],
+  "summary": {
+    "tasks": 1,
+    "accepted": 1,
+    "task_success_rate": 1.0,
+    "mean_seconds": 6.643951499951072,
+    "total_blender_actions": 1,
+    "failed_task_ids": [],
+    "categories": {
+      "create": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.643951499951072
+      }
+    }
+  }
+}

@@ -1,0 +1,2223 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "name": "VeriGraph3D-MVP-64",
+    "version": "1.0",
+    "task_count": 64,
+    "seed_policy": "fixed_per_task",
+    "category_counts": {
+      "camera": 5,
+      "compound": 4,
+      "create": 4,
+      "delete": 2,
+      "light": 5,
+      "material": 8,
+      "move": 10,
+      "place_on": 10,
+      "rotate": 8,
+      "scale": 8
+    }
+  },
+  "scenes": {
+    "tabletop": {
+      "objects": {
+        "Table": {
+          "category": "furniture",
+          "location": [
+            0,
+            0,
+            0.75
+          ],
+          "dimensions": [
+            4,
+            3,
+            1.5
+          ]
+        },
+        "Cup": {
+          "category": "container",
+          "location": [
+            3,
+            -2,
+            0.5
+          ],
+          "dimensions": [
+            0.4,
+            0.4,
+            1.0
+          ]
+        },
+        "Bowl": {
+          "category": "container",
+          "location": [
+            3,
+            1.9,
+            0.3
+          ],
+          "dimensions": [
+            0.8,
+            0.8,
+            0.6
+          ]
+        },
+        "Block": {
+          "category": "object",
+          "location": [
+            -3,
+            2,
+            0.5
+          ],
+          "dimensions": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "cameras": {
+        "Camera": {
+          "location": [
+            7,
+            -7,
+            6
+          ],
+          "target": [
+            0,
+            0,
+            1
+          ],
+          "fov_degrees": 50
+        }
+      },
+      "lights": {
+        "Key": {
+          "light_type": "AREA",
+          "location": [
+            3,
+            -3,
+            6
+          ],
+          "energy": 800
+        }
+      }
+    },
+    "lifecycle": {
+      "objects": {
+        "Table": {
+          "category": "furniture",
+          "location": [
+            0,
+            0,
+            0.75
+          ],
+          "dimensions": [
+            4,
+            3,
+            1.5
+          ]
+        },
+        "Cup": {
+          "category": "container",
+          "location": [
+            3,
+            -2,
+            0.5
+          ],
+          "dimensions": [
+            0.4,
+            0.4,
+            1.0
+          ]
+        },
+        "Bowl": {
+          "category": "container",
+          "location": [
+            3,
+            1.9,
+            0.3
+          ],
+          "dimensions": [
+            0.8,
+            0.8,
+            0.6
+          ]
+        },
+        "Block": {
+          "category": "object",
+          "location": [
+            -3,
+            2,
+            0.5
+          ],
+          "dimensions": [
+            1,
+            1,
+            1
+          ]
+        },
+        "DeleteA": {
+          "category": "temporary",
+          "location": [
+            4,
+            2,
+            0.4
+          ],
+          "dimensions": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "DeleteB": {
+          "category": "temporary",
+          "location": [
+            -4,
+            -2,
+            0.4
+          ],
+          "dimensions": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        }
+      },
+      "cameras": {
+        "Camera": {
+          "location": [
+            7,
+            -7,
+            6
+          ],
+          "target": [
+            0,
+            0,
+            1
+          ],
+          "fov_degrees": 50
+        }
+      },
+      "lights": {
+        "Key": {
+          "light_type": "AREA",
+          "location": [
+            3,
+            -3,
+            6
+          ],
+          "energy": 800
+        }
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "move_001",
+      "instruction": "将Cup移动到[3.0, -2.4, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1001,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            3.0,
+            -2.4,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_002",
+      "instruction": "将Cup移动到[3.4, -2.0, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1002,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            3.4,
+            -2.0,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_003",
+      "instruction": "将Cup移动到[2.7, -2.5, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1003,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            2.7,
+            -2.5,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_004",
+      "instruction": "将Cup移动到[-3.0, -2.3, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1004,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            -3.0,
+            -2.3,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_005",
+      "instruction": "将Cup移动到[-3.4, -2.0, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1005,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            -3.4,
+            -2.0,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_006",
+      "instruction": "将Cup移动到[4.0, 2.6, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1006,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            4.0,
+            2.6,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_007",
+      "instruction": "将Cup移动到[-4.0, 2.7, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1007,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            -4.0,
+            2.7,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_008",
+      "instruction": "将Cup移动到[2.8, -2.2, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1008,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            2.8,
+            -2.2,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_009",
+      "instruction": "将Cup移动到[-2.8, -2.2, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1009,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            -2.8,
+            -2.2,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "move_010",
+      "instruction": "将Cup移动到[3.6, 0.0, 0.5]",
+      "initial_scene": "tabletop",
+      "seed": 1010,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            3.6,
+            0.0,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "move",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_001",
+      "instruction": "将Cup绕Z轴旋转到0.25弧度",
+      "initial_scene": "tabletop",
+      "seed": 2001,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            0.25
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_002",
+      "instruction": "将Cup绕Z轴旋转到0.5弧度",
+      "initial_scene": "tabletop",
+      "seed": 2002,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_003",
+      "instruction": "将Cup绕Z轴旋转到0.7854弧度",
+      "initial_scene": "tabletop",
+      "seed": 2003,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            0.7854
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_004",
+      "instruction": "将Cup绕Z轴旋转到1.0弧度",
+      "initial_scene": "tabletop",
+      "seed": 2004,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_005",
+      "instruction": "将Cup绕Z轴旋转到1.5708弧度",
+      "initial_scene": "tabletop",
+      "seed": 2005,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            1.5708
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_006",
+      "instruction": "将Cup绕Z轴旋转到2.0弧度",
+      "initial_scene": "tabletop",
+      "seed": 2006,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            2.0
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_007",
+      "instruction": "将Cup绕Z轴旋转到2.3562弧度",
+      "initial_scene": "tabletop",
+      "seed": 2007,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            2.3562
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "rotate_008",
+      "instruction": "将Cup绕Z轴旋转到3.1416弧度",
+      "initial_scene": "tabletop",
+      "seed": 2008,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0.0,
+            0.0,
+            3.1416
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "rotate",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_001",
+      "instruction": "将Cup缩放为0.6倍",
+      "initial_scene": "tabletop",
+      "seed": 3001,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            0.6,
+            0.6,
+            0.6
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_002",
+      "instruction": "将Cup缩放为0.75倍",
+      "initial_scene": "tabletop",
+      "seed": 3002,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            0.75,
+            0.75,
+            0.75
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_003",
+      "instruction": "将Cup缩放为0.9倍",
+      "initial_scene": "tabletop",
+      "seed": 3003,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            0.9,
+            0.9,
+            0.9
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_004",
+      "instruction": "将Cup缩放为1.1倍",
+      "initial_scene": "tabletop",
+      "seed": 3004,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            1.1,
+            1.1,
+            1.1
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_005",
+      "instruction": "将Cup缩放为1.25倍",
+      "initial_scene": "tabletop",
+      "seed": 3005,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            1.25,
+            1.25,
+            1.25
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_006",
+      "instruction": "将Cup缩放为1.4倍",
+      "initial_scene": "tabletop",
+      "seed": 3006,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            1.4,
+            1.4,
+            1.4
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_007",
+      "instruction": "将Cup缩放为1.6倍",
+      "initial_scene": "tabletop",
+      "seed": 3007,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            1.6,
+            1.6,
+            1.6
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "scale_008",
+      "instruction": "将Cup缩放为1.8倍",
+      "initial_scene": "tabletop",
+      "seed": 3008,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            1.8,
+            1.8,
+            1.8
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "scale",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_001",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4001,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_002",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4002,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [
+        {
+          "subject": "Cup",
+          "predicate": "visible_from",
+          "confidence": 0.35,
+          "reason": "single_view_occlusion"
+        }
+      ],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_003",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4003,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_004",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4004,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [
+        {
+          "subject": "Cup",
+          "predicate": "visible_from",
+          "confidence": 0.35,
+          "reason": "single_view_occlusion"
+        }
+      ],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_005",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4005,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_006",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4006,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [
+        {
+          "subject": "Cup",
+          "predicate": "visible_from",
+          "confidence": 0.35,
+          "reason": "single_view_occlusion"
+        }
+      ],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "place_on_007",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4007,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "fault_injection",
+        "object_count": 4,
+        "faults": [
+          {
+            "action_id": "action_001",
+            "kind": "z_offset",
+            "value": -0.1,
+            "remaining": 1
+          }
+        ],
+        "expected_failure_type": "constraint_solver_error"
+      }
+    },
+    {
+      "id": "place_on_008",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4008,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [
+        {
+          "subject": "Cup",
+          "predicate": "visible_from",
+          "confidence": 0.35,
+          "reason": "single_view_occlusion"
+        }
+      ],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "fault_injection",
+        "object_count": 4,
+        "faults": [
+          {
+            "action_id": "action_001",
+            "kind": "z_offset",
+            "value": -0.15000000000000002,
+            "remaining": 1
+          }
+        ],
+        "expected_failure_type": "constraint_solver_error"
+      }
+    },
+    {
+      "id": "place_on_009",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4009,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "fault_injection",
+        "object_count": 4,
+        "faults": [
+          {
+            "action_id": "action_001",
+            "kind": "z_offset",
+            "value": -0.2,
+            "remaining": 1
+          }
+        ],
+        "expected_failure_type": "constraint_solver_error"
+      }
+    },
+    {
+      "id": "place_on_010",
+      "instruction": "将Cup无碰撞地放到Table中央",
+      "initial_scene": "tabletop",
+      "seed": 4010,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [
+        {
+          "subject": "Cup",
+          "predicate": "visible_from",
+          "confidence": 0.35,
+          "reason": "single_view_occlusion"
+        }
+      ],
+      "metadata": {
+        "category": "place_on",
+        "difficulty": "fault_injection",
+        "object_count": 4,
+        "faults": [
+          {
+            "action_id": "action_001",
+            "kind": "z_offset",
+            "value": -0.25,
+            "remaining": 1
+          }
+        ],
+        "expected_failure_type": "constraint_solver_error"
+      }
+    },
+    {
+      "id": "material_001",
+      "instruction": "修改Cup颜色为RGBA [1.0, 0.0, 0.0, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5001,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_002",
+      "instruction": "修改Cup颜色为RGBA [0.0, 0.3, 1.0, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5002,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          0.0,
+          0.3,
+          1.0,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_003",
+      "instruction": "修改Cup颜色为RGBA [0.1, 0.8, 0.2, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5003,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          0.1,
+          0.8,
+          0.2,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_004",
+      "instruction": "修改Cup颜色为RGBA [1.0, 0.6, 0.0, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5004,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          1.0,
+          0.6,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_005",
+      "instruction": "修改Cup颜色为RGBA [0.6, 0.1, 0.8, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5005,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          0.6,
+          0.1,
+          0.8,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_006",
+      "instruction": "修改Cup颜色为RGBA [0.1, 0.8, 0.8, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5006,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          0.1,
+          0.8,
+          0.8,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_007",
+      "instruction": "修改Cup颜色为RGBA [0.9, 0.2, 0.5, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5007,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          0.9,
+          0.2,
+          0.5,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "material_008",
+      "instruction": "修改Cup颜色为RGBA [0.3, 0.3, 0.3, 1.0]",
+      "initial_scene": "tabletop",
+      "seed": 5008,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "Cup.color": [
+          0.3,
+          0.3,
+          0.3,
+          1.0
+        ]
+      },
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "material",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "camera_001",
+      "instruction": "将Camera视场角设为35.0度",
+      "initial_scene": "tabletop",
+      "seed": 6001,
+      "required": [
+        {
+          "subject": "Camera",
+          "predicate": "fov_degrees",
+          "expected": 35.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "camera",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "camera_002",
+      "instruction": "将Camera视场角设为45.0度",
+      "initial_scene": "tabletop",
+      "seed": 6002,
+      "required": [
+        {
+          "subject": "Camera",
+          "predicate": "fov_degrees",
+          "expected": 45.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "camera",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "camera_003",
+      "instruction": "将Camera视场角设为55.0度",
+      "initial_scene": "tabletop",
+      "seed": 6003,
+      "required": [
+        {
+          "subject": "Camera",
+          "predicate": "fov_degrees",
+          "expected": 55.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "camera",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "camera_004",
+      "instruction": "将Camera视场角设为65.0度",
+      "initial_scene": "tabletop",
+      "seed": 6004,
+      "required": [
+        {
+          "subject": "Camera",
+          "predicate": "fov_degrees",
+          "expected": 65.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "camera",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "camera_005",
+      "instruction": "将Camera视场角设为75.0度",
+      "initial_scene": "tabletop",
+      "seed": 6005,
+      "required": [
+        {
+          "subject": "Camera",
+          "predicate": "fov_degrees",
+          "expected": 75.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "camera",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "light_001",
+      "instruction": "将Key灯光能量设为200.0",
+      "initial_scene": "tabletop",
+      "seed": 7001,
+      "required": [
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 200.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "light",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "light_002",
+      "instruction": "将Key灯光能量设为500.0",
+      "initial_scene": "tabletop",
+      "seed": 7002,
+      "required": [
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 500.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "light",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "light_003",
+      "instruction": "将Key灯光能量设为800.0",
+      "initial_scene": "tabletop",
+      "seed": 7003,
+      "required": [
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 800.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "light",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "light_004",
+      "instruction": "将Key灯光能量设为1200.0",
+      "initial_scene": "tabletop",
+      "seed": 7004,
+      "required": [
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 1200.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "light",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "light_005",
+      "instruction": "将Key灯光能量设为1800.0",
+      "initial_scene": "tabletop",
+      "seed": 7005,
+      "required": [
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 1800.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "uncertainties": [],
+      "metadata": {
+        "category": "light",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "create_001",
+      "instruction": "创建安全图元Created1",
+      "initial_scene": "tabletop",
+      "seed": 8001,
+      "required": [
+        {
+          "subject": "Created1",
+          "predicate": "exists",
+          "expected": true
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "Created1.color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "create_object",
+          "target": "Created1",
+          "reference": null,
+          "parameters": {
+            "primitive": "cube",
+            "category": "generated",
+            "dimensions": [
+              0.5,
+              0.5,
+              0.8
+            ],
+            "location": [
+              2.8,
+              -2.5,
+              0.4
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "create",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "create_002",
+      "instruction": "创建安全图元Created2",
+      "initial_scene": "tabletop",
+      "seed": 8002,
+      "required": [
+        {
+          "subject": "Created2",
+          "predicate": "exists",
+          "expected": true
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "Created2.color": [
+          0.0,
+          0.3,
+          1.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "create_object",
+          "target": "Created2",
+          "reference": null,
+          "parameters": {
+            "primitive": "sphere",
+            "category": "generated",
+            "dimensions": [
+              0.5,
+              0.5,
+              0.8
+            ],
+            "location": [
+              3.1,
+              -2.5,
+              0.4
+            ],
+            "color": [
+              0.0,
+              0.3,
+              1.0,
+              1.0
+            ]
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "create",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "create_003",
+      "instruction": "创建安全图元Created3",
+      "initial_scene": "tabletop",
+      "seed": 8003,
+      "required": [
+        {
+          "subject": "Created3",
+          "predicate": "exists",
+          "expected": true
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "Created3.color": [
+          0.1,
+          0.8,
+          0.2,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "create_object",
+          "target": "Created3",
+          "reference": null,
+          "parameters": {
+            "primitive": "cylinder",
+            "category": "generated",
+            "dimensions": [
+              0.5,
+              0.5,
+              0.8
+            ],
+            "location": [
+              3.4,
+              -2.5,
+              0.4
+            ],
+            "color": [
+              0.1,
+              0.8,
+              0.2,
+              1.0
+            ]
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "create",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "create_004",
+      "instruction": "创建安全图元Created4",
+      "initial_scene": "tabletop",
+      "seed": 8004,
+      "required": [
+        {
+          "subject": "Created4",
+          "predicate": "exists",
+          "expected": true
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "Created4.color": [
+          1.0,
+          0.6,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "create_object",
+          "target": "Created4",
+          "reference": null,
+          "parameters": {
+            "primitive": "cone",
+            "category": "generated",
+            "dimensions": [
+              0.5,
+              0.5,
+              0.8
+            ],
+            "location": [
+              3.7,
+              -2.5,
+              0.4
+            ],
+            "color": [
+              1.0,
+              0.6,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "create",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "delete_001",
+      "instruction": "删除授权对象DeleteA",
+      "initial_scene": "lifecycle",
+      "seed": 9001,
+      "required": [
+        {
+          "subject": "DeleteA",
+          "predicate": "exists",
+          "expected": false
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "delete_object",
+          "target": "DeleteA",
+          "reference": null,
+          "parameters": {}
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "delete",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "delete_002",
+      "instruction": "删除授权对象DeleteB",
+      "initial_scene": "lifecycle",
+      "seed": 9002,
+      "required": [
+        {
+          "subject": "DeleteB",
+          "predicate": "exists",
+          "expected": false
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "delete_object",
+          "target": "DeleteB",
+          "reference": null,
+          "parameters": {}
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "delete",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "compound_001",
+      "instruction": "移动、旋转并缩放Cup",
+      "initial_scene": "tabletop",
+      "seed": 10001,
+      "required": [
+        {
+          "subject": "Cup",
+          "predicate": "location",
+          "expected": [
+            3.4,
+            -2.4,
+            0.5
+          ]
+        },
+        {
+          "subject": "Cup",
+          "predicate": "rotation",
+          "expected": [
+            0,
+            0,
+            1.2
+          ]
+        },
+        {
+          "subject": "Cup",
+          "predicate": "scale",
+          "expected": [
+            1.3,
+            1.3,
+            1.3
+          ]
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "move_object",
+          "target": "Cup",
+          "reference": null,
+          "parameters": {
+            "location": [
+              3.4,
+              -2.4,
+              0.5
+            ]
+          }
+        },
+        {
+          "id": "action_002",
+          "type": "rotate_object",
+          "target": "Cup",
+          "reference": null,
+          "parameters": {
+            "rotation": [
+              0,
+              0,
+              1.2
+            ]
+          }
+        },
+        {
+          "id": "action_003",
+          "type": "scale_object",
+          "target": "Cup",
+          "reference": null,
+          "parameters": {
+            "scale": [
+              1.3,
+              1.3,
+              1.3
+            ]
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "compound",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "compound_002",
+      "instruction": "放置Cup并修改为红色",
+      "initial_scene": "tabletop",
+      "seed": 10002,
+      "required": [
+        [
+          "Cup",
+          "on_top_of",
+          "Table"
+        ]
+      ],
+      "forbidden": [
+        [
+          "Cup",
+          "intersecting",
+          "Table"
+        ]
+      ],
+      "visual": {
+        "Cup.color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "place_on",
+          "target": "Cup",
+          "reference": "Table",
+          "parameters": {}
+        },
+        {
+          "id": "action_002",
+          "type": "set_material",
+          "target": "Cup",
+          "reference": null,
+          "parameters": {
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "compound",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "compound_003",
+      "instruction": "联合调整相机和灯光",
+      "initial_scene": "tabletop",
+      "seed": 10003,
+      "required": [
+        {
+          "subject": "Camera",
+          "predicate": "fov_degrees",
+          "expected": 60.0
+        },
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 1400.0
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "set_camera",
+          "target": "Camera",
+          "reference": null,
+          "parameters": {
+            "fov_degrees": 60.0
+          }
+        },
+        {
+          "id": "action_002",
+          "type": "set_light",
+          "target": "Key",
+          "reference": null,
+          "parameters": {
+            "energy": 1400.0
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "compound",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    },
+    {
+      "id": "compound_004",
+      "instruction": "创建蓝色圆柱并调整灯光",
+      "initial_scene": "tabletop",
+      "seed": 10004,
+      "required": [
+        {
+          "subject": "GeneratedVase",
+          "predicate": "exists",
+          "expected": true
+        },
+        {
+          "subject": "Key",
+          "predicate": "energy",
+          "expected": 1000.0
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "GeneratedVase.color": [
+          0.0,
+          0.3,
+          1.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "create_object",
+          "target": "GeneratedVase",
+          "reference": null,
+          "parameters": {
+            "primitive": "cylinder",
+            "category": "vase",
+            "dimensions": [
+              0.4,
+              0.4,
+              0.9
+            ],
+            "location": [
+              3.5,
+              -2.5,
+              0.45
+            ],
+            "color": [
+              0.0,
+              0.3,
+              1.0,
+              1.0
+            ]
+          }
+        },
+        {
+          "id": "action_002",
+          "type": "set_light",
+          "target": "Key",
+          "reference": null,
+          "parameters": {
+            "energy": 1000.0
+          }
+        }
+      ],
+      "uncertainties": [],
+      "metadata": {
+        "category": "compound",
+        "difficulty": "mvp",
+        "object_count": 4
+      }
+    }
+  ]
+}

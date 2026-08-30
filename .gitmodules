@@ -1,0 +1,3 @@
+[submodule "external/AgentBlender-World-State"]
+	path = external/AgentBlender-World-State
+	url = https://github.com/zhensama-1/AgentBlender-World-State.git

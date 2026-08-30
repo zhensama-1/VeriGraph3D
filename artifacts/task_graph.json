@@ -1,0 +1,564 @@
+{
+  "nodes": {
+    "Table": {
+      "type": "object",
+      "name": "Table",
+      "category": "furniture",
+      "location": [
+        0,
+        0,
+        0.75
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        3,
+        2,
+        1.5
+      ],
+      "color": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "material": null,
+      "visible": true,
+      "parent": null,
+      "rigid_body": false,
+      "collision_enabled": true,
+      "metadata": {
+        "allow_floating": true
+      }
+    },
+    "Cup": {
+      "type": "container",
+      "name": "Cup",
+      "category": "container",
+      "location": [
+        2,
+        0,
+        0.5
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "dimensions": [
+        0.4,
+        0.4,
+        1.0
+      ],
+      "color": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "material": null,
+      "visible": true,
+      "parent": null,
+      "rigid_body": false,
+      "collision_enabled": true,
+      "metadata": {}
+    },
+    "Camera": {
+      "type": "camera",
+      "name": "Camera",
+      "location": [
+        6,
+        -6,
+        5
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "fov_degrees": 50
+    },
+    "constraint:required:001": {
+      "type": "constraint",
+      "group": "required",
+      "subject": "Cup",
+      "predicate": "on_top_of",
+      "object": "Table",
+      "expected": true,
+      "hard": true,
+      "tolerance": 0.01,
+      "weight": 1.0
+    },
+    "constraint:forbidden:001": {
+      "type": "constraint",
+      "group": "forbidden",
+      "subject": "Cup",
+      "predicate": "intersecting",
+      "object": "Table",
+      "expected": true,
+      "hard": true,
+      "tolerance": 0.01,
+      "weight": 1.0
+    }
+  },
+  "facts": [
+    {
+      "subject": "Table",
+      "predicate": "left_of",
+      "object": "Cup",
+      "value": true,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "right_of",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "below",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "above",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "intersecting",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "inside",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "on_top_of",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "supports",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "in_front_of",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "attached_to",
+      "object": "Cup",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "left_of",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "right_of",
+      "object": "Table",
+      "value": true,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "below",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "above",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "intersecting",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "inside",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "on_top_of",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "supports",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "in_front_of",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "attached_to",
+      "object": "Table",
+      "value": false,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "visible_from",
+      "object": "Camera",
+      "value": true,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "visible_from",
+      "object": "Camera",
+      "value": true,
+      "confidence": 1.0,
+      "source": "geometry",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "location",
+      "object": null,
+      "value": [
+        0,
+        0,
+        0.75
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "rotation",
+      "object": null,
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "scale",
+      "object": null,
+      "value": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "color",
+      "object": null,
+      "value": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "material",
+      "object": null,
+      "value": null,
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Table",
+      "predicate": "visible",
+      "object": null,
+      "value": true,
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "location",
+      "object": null,
+      "value": [
+        2,
+        0,
+        0.5
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "rotation",
+      "object": null,
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "scale",
+      "object": null,
+      "value": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "color",
+      "object": null,
+      "value": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "material",
+      "object": null,
+      "value": null,
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Cup",
+      "predicate": "visible",
+      "object": null,
+      "value": true,
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Camera",
+      "predicate": "location",
+      "object": null,
+      "value": [
+        6,
+        -6,
+        5
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Camera",
+      "predicate": "target",
+      "object": null,
+      "value": [
+        0,
+        0,
+        0
+      ],
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "Camera",
+      "predicate": "fov_degrees",
+      "object": null,
+      "value": 50,
+      "confidence": 1.0,
+      "source": "engine",
+      "timestamp": 0
+    },
+    {
+      "subject": "constraint:required:001",
+      "predicate": "constrains",
+      "object": "Cup",
+      "value": true,
+      "confidence": 1.0,
+      "source": "goal",
+      "timestamp": 0
+    },
+    {
+      "subject": "constraint:required:001",
+      "predicate": "references",
+      "object": "Table",
+      "value": true,
+      "confidence": 1.0,
+      "source": "goal",
+      "timestamp": 0
+    },
+    {
+      "subject": "constraint:forbidden:001",
+      "predicate": "constrains",
+      "object": "Cup",
+      "value": true,
+      "confidence": 1.0,
+      "source": "goal",
+      "timestamp": 0
+    },
+    {
+      "subject": "constraint:forbidden:001",
+      "predicate": "references",
+      "object": "Table",
+      "value": true,
+      "confidence": 1.0,
+      "source": "goal",
+      "timestamp": 0
+    }
+  ],
+  "goal": {
+    "required": [
+      {
+        "subject": "Cup",
+        "predicate": "on_top_of",
+        "object": "Table",
+        "expected": true,
+        "hard": true,
+        "tolerance": 0.01,
+        "weight": 1.0
+      }
+    ],
+    "forbidden": [
+      {
+        "subject": "Cup",
+        "predicate": "intersecting",
+        "object": "Table",
+        "expected": true,
+        "hard": true,
+        "tolerance": 0.01,
+        "weight": 1.0
+      }
+    ],
+    "visual": {
+      "Cup.color": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "actions": [],
+  "uncertainties": []
+}

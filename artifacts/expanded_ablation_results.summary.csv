@@ -1,0 +1,9 @@
+﻿variant,tasks,task_success_rate,agent_acceptance_rate,false_acceptance_rate,constraint_satisfaction_rate,severe_physical_violation_rate,invalid_action_rate,mean_actions,mean_repairs,mean_elapsed_seconds,mean_rollbacks,mean_observations,mean_information_gain_per_observation,mean_observation_cost,information_gain_cost_ratio,failure_attribution_accuracy,local_repair_success_rate
+constraint_solver,64,0.9375,0.9375,0.0,0.9375,0.0625,0.0,1.078125,0,0.013053687494902988,0,0,,0.0,,0.0,
+deterministic_verifier,64,0.828125,0.828125,0.0,0.9140625,0.0,0.15942028985507245,1.078125,0,0.011445534370068344,0,0,,0.0,,0.0,
+dynamic_scene_graph,64,0.828125,1.0,0.171875,0.9140625,0.0,0.15942028985507245,1.078125,0,0.005014421869418584,0,0,,0.0,,0.0,
+pure_visual,64,0.828125,1.0,0.171875,0.9140625,0.0,0.15942028985507245,1.078125,0,0.0011631000088527799,0,0,,0.0,,0.0,
+scene_memory,64,0.828125,1.0,0.171875,0.9140625,0.0,0.15942028985507245,1.078125,0,0.0011582156239455799,0,0,,0.0,,0.0,
+verigraph3d,64,1.0,1.0,0.0,1.0,0.0,0.0,1.140625,0.0625,0.011743518758521532,0,0,,0.0,,1.0,1.0
+verigraph3d_active,64,1.0,1.0,0.0,1.0,0.0,0.0,1.140625,0.0625,0.011723620318662142,0,0.078125,0.9,0.0078125,9.0,1.0,1.0
+verigraph3d_full,64,1.0,1.0,0.0,1.0,0.0,0.0,1.140625,0.0625,0.012263623439139337,0,0,,0.0,,1.0,1.0

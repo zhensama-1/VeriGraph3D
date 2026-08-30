@@ -1,0 +1,34 @@
+# Python caches and build outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated Blender binaries and render outputs
+*.blend
+*.blend1
+artifacts/renders/
+external/AgentBlender-World-State/outputs/
+

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "tasks": [
+    {
+      "id": "abws_move_chair_001",
+      "instruction": "将ABWS椅子移动到指定位置",
+      "initial_scene": {},
+      "seed": 42,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "location",
+          "expected": [1.5, 0.0, 0.455],
+          "tolerance": 0.001
+        }
+      ],
+      "metadata": {
+        "backend": "agentblender_world_state",
+        "stable_id": "chair_01"
+      }
+    },
+    {
+      "id": "abws_camera_light_material_002",
+      "instruction": "调整相机和灯光，并把椅子改成红色",
+      "initial_scene": {},
+      "seed": 42,
+      "required": [
+        {
+          "subject": "ABWS__camera_main",
+          "predicate": "fov_degrees",
+          "expected": 60.0,
+          "tolerance": 0.001
+        },
+        {
+          "subject": "ABWS__key_light",
+          "predicate": "energy",
+          "expected": 1200.0,
+          "tolerance": 0.001
+        }
+      ],
+      "visual": {
+        "ABWS__chair_01.color": [1.0, 0.0, 0.0, 1.0]
+      },
+      "metadata": {
+        "backend": "agentblender_atomic",
+        "actions": ["set_camera", "set_light", "set_material_color"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "scenes": {
+    "tabletop_demo": {
+      "objects": {
+        "Table": {
+          "category": "furniture",
+          "location": [0, 0, 0.75],
+          "dimensions": [3, 2, 1.5],
+          "metadata": {"allow_floating": true}
+        },
+        "Cup": {
+          "category": "container",
+          "location": [2, 0, 0.5],
+          "dimensions": [0.4, 0.4, 1.0]
+        }
+      },
+      "cameras": {
+        "Camera": {"location": [6, -6, 5], "target": [0, 0, 0], "fov_degrees": 50}
+      }
+    }
+  },
+  "tasks": [
+    {
+      "id": "place_and_color_001",
+      "instruction": "把Cup放到Table上，并把Cup改成红色",
+      "initial_scene": "tabletop_demo",
+      "seed": 42,
+      "required": [["Cup", "on_top_of", "Table"]],
+      "forbidden": [["Cup", "intersecting", "Table"]],
+      "visual": {"Cup.color": [1.0, 0.0, 0.0, 1.0]},
+      "uncertainties": [
+        {"subject": "Cup", "predicate": "visible_from", "confidence": 0.4, "reason": "single_view"}
+      ],
+      "metadata": {"difficulty": "mvp", "object_count": 2}
+    },
+    {
+      "id": "move_002",
+      "instruction": "把Cup移动到指定位置",
+      "initial_scene": "tabletop_demo",
+      "seed": 42,
+      "required": [
+        {"subject": "Cup", "predicate": "location", "expected": [2.5, 0.5, 0.5], "tolerance": 0.001}
+      ],
+      "metadata": {"difficulty": "mvp", "action": "move"}
+    },
+    {
+      "id": "rotate_003",
+      "instruction": "将Cup绕Z轴旋转90度",
+      "initial_scene": "tabletop_demo",
+      "seed": 42,
+      "required": [
+        {"subject": "Cup", "predicate": "rotation", "expected": [0, 0, 1.5708], "tolerance": 0.001}
+      ],
+      "metadata": {"difficulty": "mvp", "action": "rotate"}
+    },
+    {
+      "id": "scale_004",
+      "instruction": "将Cup放大到1.5倍",
+      "initial_scene": "tabletop_demo",
+      "seed": 42,
+      "required": [
+        {"subject": "Cup", "predicate": "scale", "expected": [1.5, 1.5, 1.5], "tolerance": 0.001}
+      ],
+      "metadata": {"difficulty": "mvp", "action": "scale"}
+    },
+    {
+      "id": "recovery_005",
+      "instruction": "把Cup放到Table上；首次执行注入向下的位置偏差",
+      "initial_scene": "tabletop_demo",
+      "seed": 42,
+      "required": [["Cup", "on_top_of", "Table"]],
+      "forbidden": [["Cup", "intersecting", "Table"]],
+      "metadata": {
+        "difficulty": "fault_injection",
+        "action": "place_on",
+        "faults": [
+          {"action_id": "action_001", "kind": "z_offset", "value": -0.2, "remaining": 1}
+        ],
+        "expected_failure_type": "constraint_solver_error"
+      }
+    }
+  ]
+}

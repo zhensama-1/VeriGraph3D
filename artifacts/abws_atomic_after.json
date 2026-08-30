@@ -1,0 +1,268 @@
+{
+  "scene_id": "after",
+  "revision": 1,
+  "units": "METERS",
+  "coordinate_system": "BLENDER_Z_UP",
+  "objects": {
+    "chair_01": {
+      "id": "chair_01",
+      "blender_name": "ABWS__chair_01",
+      "category": "chair",
+      "display_name": "ABWS__chair_01",
+      "asset_id": null,
+      "transform": {
+        "location": [
+          1.5,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "dimensions": [
+        0.47999998927116394,
+        0.5199999809265137,
+        0.9100000262260437
+      ],
+      "origin_policy": "BOTTOM_CENTER",
+      "materials": [],
+      "parent_id": null,
+      "collections": [
+        "Collection"
+      ],
+      "modifiers": [],
+      "constraints": [],
+      "animation": {
+        "action_id": null,
+        "keyframes": {}
+      },
+      "physics": {
+        "movable": true,
+        "mass": 1.0,
+        "collision_shape": "CONVEX_HULL"
+      },
+      "semantic_tags": [],
+      "capabilities": [
+        "move",
+        "rotate",
+        "scale",
+        "duplicate",
+        "replace_material",
+        "set_visibility"
+      ],
+      "metadata": {
+        "created_by": "blender",
+        "locked": false,
+        "visible": true,
+        "extra": {}
+      }
+    },
+    "desk_01": {
+      "id": "desk_01",
+      "blender_name": "ABWS__desk_01",
+      "category": "desk",
+      "display_name": "ABWS__desk_01",
+      "asset_id": null,
+      "transform": {
+        "location": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "dimensions": [
+        1.399999976158142,
+        0.699999988079071,
+        0.75
+      ],
+      "origin_policy": "BOTTOM_CENTER",
+      "materials": [],
+      "parent_id": null,
+      "collections": [
+        "Collection"
+      ],
+      "modifiers": [],
+      "constraints": [],
+      "animation": {
+        "action_id": null,
+        "keyframes": {}
+      },
+      "physics": {
+        "movable": true,
+        "mass": 1.0,
+        "collision_shape": "CONVEX_HULL"
+      },
+      "semantic_tags": [],
+      "capabilities": [
+        "move",
+        "rotate",
+        "scale",
+        "duplicate",
+        "replace_material",
+        "set_visibility"
+      ],
+      "metadata": {
+        "created_by": "blender",
+        "locked": false,
+        "visible": true,
+        "extra": {}
+      }
+    },
+    "door_01": {
+      "id": "door_01",
+      "blender_name": "ABWS__door_01",
+      "category": "door",
+      "display_name": "ABWS__door_01",
+      "asset_id": null,
+      "transform": {
+        "location": [
+          -3.5,
+          0.0,
+          0.0
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "dimensions": [
+        0.10000000149011612,
+        0.8999999761581421,
+        2.0999999046325684
+      ],
+      "origin_policy": "BOTTOM_CENTER",
+      "materials": [],
+      "parent_id": null,
+      "collections": [
+        "Collection"
+      ],
+      "modifiers": [],
+      "constraints": [],
+      "animation": {
+        "action_id": null,
+        "keyframes": {}
+      },
+      "physics": {
+        "movable": false,
+        "mass": 1.0,
+        "collision_shape": "CONVEX_HULL"
+      },
+      "semantic_tags": [],
+      "capabilities": [
+        "move",
+        "rotate",
+        "scale",
+        "duplicate",
+        "replace_material",
+        "set_visibility"
+      ],
+      "metadata": {
+        "created_by": "blender",
+        "locked": true,
+        "visible": true,
+        "extra": {}
+      }
+    },
+    "floor_01": {
+      "id": "floor_01",
+      "blender_name": "ABWS__floor_01",
+      "category": "floor",
+      "display_name": "ABWS__floor_01",
+      "asset_id": null,
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          -0.10000000149011612
+        ],
+        "rotation_euler": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "dimensions": [
+        8.0,
+        6.0,
+        0.10000000149011612
+      ],
+      "origin_policy": "BOTTOM_CENTER",
+      "materials": [],
+      "parent_id": null,
+      "collections": [
+        "Collection"
+      ],
+      "modifiers": [],
+      "constraints": [],
+      "animation": {
+        "action_id": null,
+        "keyframes": {}
+      },
+      "physics": {
+        "movable": false,
+        "mass": 1.0,
+        "collision_shape": "CONVEX_HULL"
+      },
+      "semantic_tags": [],
+      "capabilities": [
+        "move",
+        "rotate",
+        "scale",
+        "duplicate",
+        "replace_material",
+        "set_visibility"
+      ],
+      "metadata": {
+        "created_by": "blender",
+        "locked": true,
+        "visible": true,
+        "extra": {}
+      }
+    }
+  },
+  "relations": [],
+  "environment": {
+    "room_bounds": {
+      "min": [
+        -4.0,
+        -3.0,
+        -0.1
+      ],
+      "max": [
+        4.0,
+        3.0,
+        3.0
+      ]
+    },
+    "render_engine": "BLENDER_EEVEE"
+  }
+}

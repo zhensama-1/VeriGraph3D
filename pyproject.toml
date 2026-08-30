@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verigraph3d"
+version = "0.1.0"
+description = "Executable dynamic scene graphs and hybrid verification for reliable 3D editing"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+visual = ["Pillow>=10", "numpy>=1.24"]
+agentblender = ["pydantic>=1.10,<2", "PyYAML>=6"]
+
+[project.scripts]
+verigraph3d = "verigraph3d.cli:main"
+verigraph3d-experiment = "verigraph3d.experiment_cli:main"
+verigraph3d-vlm-check = "verigraph3d.vlm_check_cli:main"
+verigraph3d-graph = "verigraph3d.graph_cli:main"
+verigraph3d-abws-atomic = "verigraph3d.abws_atomic_cli:main"
+verigraph3d-abws-experiment = "verigraph3d.abws_experiment_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["blender: requires a real Blender executable"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

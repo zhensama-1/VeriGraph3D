@@ -1,0 +1,277 @@
+{
+  "accepted": true,
+  "decision": "accept",
+  "trace": [
+    {
+      "action": "action_001",
+      "status": "success",
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "repairs": 0,
+      "failure": null
+    },
+    {
+      "action": "action_002",
+      "status": "success",
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "repairs": 0,
+      "failure": null
+    }
+  ],
+  "verification": {
+    "accepted": true,
+    "decision": "accept",
+    "deterministic": [
+      {
+        "passed": true,
+        "code": "required_constraint",
+        "message": "Required: Cup.on_top_of",
+        "evidence": {
+          "constraint": {
+            "subject": "Cup",
+            "predicate": "on_top_of",
+            "object": "Table",
+            "expected": true,
+            "hard": true,
+            "tolerance": 0.01,
+            "weight": 1.0
+          }
+        }
+      },
+      {
+        "passed": true,
+        "code": "forbidden_constraint",
+        "message": "Forbidden: Cup.intersecting",
+        "evidence": {
+          "constraint": {
+            "subject": "Cup",
+            "predicate": "intersecting",
+            "object": "Table",
+            "expected": true,
+            "hard": true,
+            "tolerance": 0.01,
+            "weight": 1.0
+          }
+        }
+      },
+      {
+        "passed": true,
+        "code": "unexpected_modification",
+        "message": "Unexpected object changes",
+        "evidence": {
+          "objects": []
+        }
+      }
+    ],
+    "visual_score": 1.0,
+    "visual_differences": [],
+    "recommendations": []
+  },
+  "metrics": {
+    "started_at": 433338.8715436,
+    "elapsed_seconds": 0.00781099998857826,
+    "actions": 2,
+    "successful_actions": 2,
+    "rollbacks": 0,
+    "renders": 0,
+    "observations": 0,
+    "vlm_calls": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "final_state": {
+    "objects": {
+      "Table": {
+        "name": "Table",
+        "category": "mesh",
+        "location": [
+          0.0,
+          0.0,
+          0.75
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          3.0,
+          2.0,
+          1.5
+        ],
+        "color": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "material": null,
+        "visible": true,
+        "parent": null,
+        "rigid_body": false,
+        "collision_enabled": true,
+        "metadata": {
+          "world_aabb": {
+            "minimum": [
+              -1.5,
+              -1.0,
+              0.0
+            ],
+            "maximum": [
+              1.5,
+              1.0,
+              1.5
+            ]
+          },
+          "aabb_origin": [
+            0.0,
+            0.0,
+            0.75
+          ]
+        }
+      },
+      "Cup": {
+        "name": "Cup",
+        "category": "mesh",
+        "location": [
+          0.0,
+          0.0,
+          2.009999990463257
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "dimensions": [
+          0.4000000059604645,
+          0.4000000059604645,
+          1.0
+        ],
+        "color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "material": "Cup_Material",
+        "visible": true,
+        "parent": null,
+        "rigid_body": false,
+        "collision_enabled": true,
+        "metadata": {
+          "world_aabb": {
+            "minimum": [
+              -0.20000000298023224,
+              -0.20000000298023224,
+              1.5099999904632568
+            ],
+            "maximum": [
+              0.20000000298023224,
+              0.20000000298023224,
+              2.509999990463257
+            ]
+          },
+          "aabb_origin": [
+            0.0,
+            0.0,
+            2.009999990463257
+          ]
+        }
+      }
+    },
+    "cameras": {
+      "Camera": {
+        "name": "Camera",
+        "location": [
+          6.0,
+          -6.0,
+          5.0
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "fov_degrees": 39.5977694945097
+      }
+    },
+    "timestamp": 1,
+    "metadata": {},
+    "lights": {
+      "KeyLight": {
+        "name": "KeyLight",
+        "light_type": "AREA",
+        "location": [
+          3.0,
+          -3.0,
+          6.0
+        ],
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "energy": 1200.0,
+        "visible": true
+      }
+    }
+  }
+}

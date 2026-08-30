@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "scenes": {},
+  "tasks": [
+    {
+      "id": "blender_place_and_color_001",
+      "instruction": "把Cup放到Table上，并把Cup改成红色",
+      "initial_scene": "loaded_blend",
+      "seed": 42,
+      "reference_images": ["../artifacts/reference.png"],
+      "required": [["Cup", "on_top_of", "Table"]],
+      "forbidden": [["Cup", "intersecting", "Table"]],
+      "visual": {"Cup.color": [1.0, 0.0, 0.0, 1.0]},
+      "metadata": {"backend": "blender", "difficulty": "mvp"}
+    }
+  ]
+}

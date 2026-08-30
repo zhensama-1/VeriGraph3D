@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "environment": {
+    "python": "3.11.7",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "blender_executable": "E:\\blender\\blender.exe",
+    "source_blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\abws_blender24_fixture.blend",
+    "source_sha256": "c7e8874ad0fca9f7f68ffa7a96f732315bd54569c8a883bd1c1fd4addcf5cd9c",
+    "dataset": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\examples\\blender_tasks_expanded.json"
+  },
+  "wall_seconds": 75.92277469998226,
+  "runs": [
+    {
+      "task_id": "blender_move_01",
+      "category": "move",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 7.360879800049588,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_move_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_move_01\\result.blend"
+    },
+    {
+      "task_id": "blender_rotate_01",
+      "category": "rotate",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.878102199989371,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_rotate_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_rotate_01\\result.blend"
+    },
+    {
+      "task_id": "blender_scale_01",
+      "category": "scale",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.468384000007063,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_scale_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_scale_01\\result.blend"
+    },
+    {
+      "task_id": "blender_place_01",
+      "category": "place_on",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.2716667000204325,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_place_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_place_01\\result.blend"
+    },
+    {
+      "task_id": "blender_material_01",
+      "category": "material",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.386456600041129,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_material_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_material_01\\result.blend"
+    },
+    {
+      "task_id": "blender_camera_01",
+      "category": "camera",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.372308199992403,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_camera_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_camera_01\\result.blend"
+    },
+    {
+      "task_id": "blender_light_01",
+      "category": "light",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.674958400079049,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_light_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_light_01\\result.blend"
+    },
+    {
+      "task_id": "blender_create_01",
+      "category": "create",
+      "accepted": false,
+      "decision": "local_repair",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 1,
+      "elapsed_seconds": 6.509584699990228,
+      "final_revision": 0,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_create_01\\report.json",
+      "blend": null
+    },
+    {
+      "task_id": "blender_delete_01",
+      "category": "delete",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 1,
+      "successful_actions": 1,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 6.368665299960412,
+      "final_revision": 1,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_delete_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_delete_01\\result.blend"
+    },
+    {
+      "task_id": "blender_compound_01",
+      "category": "compound",
+      "accepted": true,
+      "decision": "accept",
+      "actions": 3,
+      "successful_actions": 3,
+      "repairs": 0,
+      "rollbacks": 0,
+      "elapsed_seconds": 16.56796489993576,
+      "final_revision": 3,
+      "error": null,
+      "report": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_compound_01\\report.json",
+      "blend": "C:\\Users\\刘震\\OneDrive\\文档\\论文查找Agent\\artifacts\\blender24_smoke\\blender_compound_01\\result.blend"
+    }
+  ],
+  "summary": {
+    "tasks": 10,
+    "accepted": 9,
+    "task_success_rate": 0.9,
+    "mean_seconds": 7.585897080006544,
+    "total_blender_actions": 12,
+    "failed_task_ids": [
+      "blender_create_01"
+    ],
+    "categories": {
+      "camera": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.372308199992403
+      },
+      "compound": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 16.56796489993576
+      },
+      "create": {
+        "tasks": 1,
+        "accepted": 0,
+        "success_rate": 0.0,
+        "mean_seconds": 6.509584699990228
+      },
+      "delete": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.368665299960412
+      },
+      "light": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.674958400079049
+      },
+      "material": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.386456600041129
+      },
+      "move": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 7.360879800049588
+      },
+      "place_on": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.2716667000204325
+      },
+      "rotate": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.878102199989371
+      },
+      "scale": {
+        "tasks": 1,
+        "accepted": 1,
+        "success_rate": 1.0,
+        "mean_seconds": 6.468384000007063
+      }
+    }
+  }
+}

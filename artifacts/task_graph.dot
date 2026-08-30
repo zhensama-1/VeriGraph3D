@@ -1,0 +1,18 @@
+digraph VeriGraph3D {
+  graph [rankdir="LR", bgcolor="white"];
+  node [shape="box", style="rounded,filled", fontname="Arial"];
+  edge [fontname="Arial", fontsize="9"];
+  "Camera" [label="Camera\n[camera]", fillcolor="#fef3c7"];
+  "Cup" [label="Cup\n[container]", fillcolor="#cffafe"];
+  "Table" [label="Table\n[object]", fillcolor="#dbeafe"];
+  "constraint:forbidden:001" [label="constraint:forbidden:001\n[forbidden]", fillcolor="#fee2e2"];
+  "constraint:required:001" [label="constraint:required:001\n[required]", fillcolor="#fee2e2"];
+  "Cup" -> "Table" [label="right_of (1.00)", color="#111827", style="solid"];
+  "Cup" -> "Camera" [label="visible_from (1.00)", color="#111827", style="solid"];
+  "Table" -> "Cup" [label="left_of (1.00)", color="#111827", style="solid"];
+  "Table" -> "Camera" [label="visible_from (1.00)", color="#111827", style="solid"];
+  "constraint:forbidden:001" -> "Cup" [label="constrains (1.00)", color="#111827", style="solid"];
+  "constraint:forbidden:001" -> "Table" [label="references (1.00)", color="#111827", style="solid"];
+  "constraint:required:001" -> "Cup" [label="constrains (1.00)", color="#111827", style="solid"];
+  "constraint:required:001" -> "Table" [label="references (1.00)", color="#111827", style="solid"];
+}

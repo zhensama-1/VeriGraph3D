@@ -1,0 +1,6989 @@
+{
+  "schema_version": "1.0",
+  "runs": [
+    {
+      "variant": "pure_visual",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": false,
+      "false_acceptance": true,
+      "oracle_verification": {
+        "accepted": false,
+        "decision": "local_repair",
+        "deterministic": [
+          {
+            "passed": false,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "failed",
+          "error": "'location'"
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.1958739,
+        "elapsed_seconds": 0.0007784999907016754,
+        "actions": 2,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "pure_visual",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.1976783,
+        "elapsed_seconds": 0.000573999946936965,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "pure_visual",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.1992415,
+        "elapsed_seconds": 0.0005931999767199159,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "pure_visual",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2008465,
+        "elapsed_seconds": 0.0006294000195339322,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "scene_memory",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": false,
+      "false_acceptance": true,
+      "oracle_verification": {
+        "accepted": false,
+        "decision": "local_repair",
+        "deterministic": [
+          {
+            "passed": false,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "failed",
+          "error": "'location'"
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2025494,
+        "elapsed_seconds": 0.0007058000192046165,
+        "actions": 2,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "scene_memory",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2042319,
+        "elapsed_seconds": 0.0005856000352650881,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "scene_memory",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2057451,
+        "elapsed_seconds": 0.0005476000369526446,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "scene_memory",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2071607,
+        "elapsed_seconds": 0.0005341999931260943,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "dynamic_scene_graph",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": false,
+      "false_acceptance": true,
+      "oracle_verification": {
+        "accepted": false,
+        "decision": "local_repair",
+        "deterministic": [
+          {
+            "passed": false,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "failed",
+          "error": "'location'"
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2091563,
+        "elapsed_seconds": 0.001455900026485324,
+        "actions": 2,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "dynamic_scene_graph",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2114712,
+        "elapsed_seconds": 0.0013304000021889806,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "dynamic_scene_graph",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2136817,
+        "elapsed_seconds": 0.001311299973167479,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "dynamic_scene_graph",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.215978,
+        "elapsed_seconds": 0.0016474999720230699,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "deterministic_verifier",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": false,
+      "ground_truth_success": false,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": false,
+        "decision": "local_repair",
+        "deterministic": [
+          {
+            "passed": false,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": false,
+      "decision": "local_repair",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "failed",
+          "error": "'location'"
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": false,
+        "decision": "local_repair",
+        "deterministic": [
+          {
+            "passed": false,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2184999,
+        "elapsed_seconds": 0.002454300003591925,
+        "actions": 2,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "deterministic_verifier",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.location",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "location",
+                    "object": null,
+                    "expected": [
+                      2.5,
+                      0.5,
+                      0.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2219324,
+        "elapsed_seconds": 0.002220099966507405,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "deterministic_verifier",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.rotation",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "rotation",
+                    "object": null,
+                    "expected": [
+                      0,
+                      0,
+                      1.5708
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2250885,
+        "elapsed_seconds": 0.002273299964144826,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "deterministic_verifier",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.scale",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "scale",
+                    "object": null,
+                    "expected": [
+                      1.5,
+                      1.5,
+                      1.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2282228,
+        "elapsed_seconds": 0.002170099993236363,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "constraint_solver",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.on_top_of",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "on_top_of",
+                    "object": "Table",
+                    "expected": true,
+                    "hard": true,
+                    "tolerance": 0.01,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2314281,
+        "elapsed_seconds": 0.004137299954891205,
+        "actions": 2,
+        "successful_actions": 2,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              0.0,
+              0.0,
+              2.01
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 2,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "constraint_solver",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.location",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "location",
+                    "object": null,
+                    "expected": [
+                      2.5,
+                      0.5,
+                      0.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2366756,
+        "elapsed_seconds": 0.002407899999525398,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "constraint_solver",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.rotation",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "rotation",
+                    "object": null,
+                    "expected": [
+                      0,
+                      0,
+                      1.5708
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2399536,
+        "elapsed_seconds": 0.0022009999956935644,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "constraint_solver",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.scale",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "scale",
+                    "object": null,
+                    "expected": [
+                      1.5,
+                      1.5,
+                      1.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2430333,
+        "elapsed_seconds": 0.002205000026151538,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_full",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.on_top_of",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "on_top_of",
+                    "object": "Table",
+                    "expected": true,
+                    "hard": true,
+                    "tolerance": 0.01,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2460931,
+        "elapsed_seconds": 0.004393399984110147,
+        "actions": 2,
+        "successful_actions": 2,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              0.0,
+              0.0,
+              2.01
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 2,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_full",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.location",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "location",
+                    "object": null,
+                    "expected": [
+                      2.5,
+                      0.5,
+                      0.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2516455,
+        "elapsed_seconds": 0.0023318000021390617,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_full",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.rotation",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "rotation",
+                    "object": null,
+                    "expected": [
+                      0,
+                      0,
+                      1.5708
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2548591,
+        "elapsed_seconds": 0.002195300010498613,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_full",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.scale",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "scale",
+                    "object": null,
+                    "expected": [
+                      1.5,
+                      1.5,
+                      1.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2579639,
+        "elapsed_seconds": 0.0021812000195495784,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.on_top_of",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "on_top_of",
+                    "object": "Table",
+                    "expected": true,
+                    "hard": true,
+                    "tolerance": 0.01,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2610027,
+        "elapsed_seconds": 0.0040608999552205205,
+        "actions": 2,
+        "successful_actions": 2,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              0.0,
+              0.0,
+              2.01
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 2,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.location",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "location",
+                    "object": null,
+                    "expected": [
+                      2.5,
+                      0.5,
+                      0.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2661033,
+        "elapsed_seconds": 0.002168700040783733,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.rotation",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "rotation",
+                    "object": null,
+                    "expected": [
+                      0,
+                      0,
+                      1.5708
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2691415,
+        "elapsed_seconds": 0.0021511000231839716,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.scale",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "scale",
+                    "object": null,
+                    "expected": [
+                      1.5,
+                      1.5,
+                      1.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2721524,
+        "elapsed_seconds": 0.002137599978595972,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_active",
+      "task_id": "place_and_color_001",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "observation_001",
+          "type": "active_observation",
+          "status": "success",
+          "information_gain": 0.9
+        },
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.on_top_of",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "on_top_of",
+                    "object": "Table",
+                    "expected": true,
+                    "hard": true,
+                    "tolerance": 0.01,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        },
+        {
+          "action": "action_002",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.on_top_of",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "on_top_of",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "forbidden_constraint",
+            "message": "Forbidden: Cup.intersecting",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "intersecting",
+                "object": "Table",
+                "expected": true,
+                "hard": true,
+                "tolerance": 0.01,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2751593,
+        "elapsed_seconds": 0.004161999968346208,
+        "actions": 2,
+        "successful_actions": 2,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 1,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              0.0,
+              0.0,
+              2.01
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              9.0,
+              0.0,
+              3.8500000000000005
+            ],
+            "target": [
+              2.0,
+              0.0,
+              0.5
+            ],
+            "fov_degrees": 50.0
+          }
+        },
+        "timestamp": 3,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_active",
+      "task_id": "move_002",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.location",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "location",
+                    "object": null,
+                    "expected": [
+                      2.5,
+                      0.5,
+                      0.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.location",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "location",
+                "object": null,
+                "expected": [
+                  2.5,
+                  0.5,
+                  0.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.280367,
+        "elapsed_seconds": 0.002154699992388487,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2.5,
+              0.5,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_active",
+      "task_id": "rotate_003",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.rotation",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "rotation",
+                    "object": null,
+                    "expected": [
+                      0,
+                      0,
+                      1.5708
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.rotation",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "rotation",
+                "object": null,
+                "expected": [
+                  0,
+                  0,
+                  1.5708
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.283373,
+        "elapsed_seconds": 0.0021353000192902982,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0,
+              0,
+              1.5708
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    },
+    {
+      "variant": "verigraph3d_active",
+      "task_id": "scale_004",
+      "seed": 42,
+      "reported_accepted": true,
+      "ground_truth_success": true,
+      "false_acceptance": false,
+      "oracle_verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "accepted": true,
+      "decision": "accept",
+      "trace": [
+        {
+          "action": "action_001",
+          "status": "success",
+          "verification": {
+            "accepted": true,
+            "decision": "accept",
+            "deterministic": [
+              {
+                "passed": true,
+                "code": "required_constraint",
+                "message": "Required: Cup.scale",
+                "evidence": {
+                  "constraint": {
+                    "subject": "Cup",
+                    "predicate": "scale",
+                    "object": null,
+                    "expected": [
+                      1.5,
+                      1.5,
+                      1.5
+                    ],
+                    "hard": true,
+                    "tolerance": 0.001,
+                    "weight": 1.0
+                  }
+                }
+              },
+              {
+                "passed": true,
+                "code": "unexpected_modification",
+                "message": "Unexpected object changes",
+                "evidence": {
+                  "objects": []
+                }
+              }
+            ],
+            "visual_score": 1.0,
+            "visual_differences": [],
+            "recommendations": []
+          },
+          "repairs": 0,
+          "failure": null
+        }
+      ],
+      "verification": {
+        "accepted": true,
+        "decision": "accept",
+        "deterministic": [
+          {
+            "passed": true,
+            "code": "required_constraint",
+            "message": "Required: Cup.scale",
+            "evidence": {
+              "constraint": {
+                "subject": "Cup",
+                "predicate": "scale",
+                "object": null,
+                "expected": [
+                  1.5,
+                  1.5,
+                  1.5
+                ],
+                "hard": true,
+                "tolerance": 0.001,
+                "weight": 1.0
+              }
+            }
+          },
+          {
+            "passed": true,
+            "code": "unexpected_modification",
+            "message": "Unexpected object changes",
+            "evidence": {
+              "objects": []
+            }
+          }
+        ],
+        "visual_score": 1.0,
+        "visual_differences": [],
+        "recommendations": []
+      },
+      "metrics": {
+        "started_at": 433050.2863721,
+        "elapsed_seconds": 0.0021293999743647873,
+        "actions": 1,
+        "successful_actions": 1,
+        "rollbacks": 0,
+        "renders": 0,
+        "observations": 0,
+        "vlm_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      },
+      "final_state": {
+        "objects": {
+          "Table": {
+            "name": "Table",
+            "category": "furniture",
+            "location": [
+              0,
+              0,
+              0.75
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "dimensions": [
+              3,
+              2,
+              1.5
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {
+              "allow_floating": true
+            }
+          },
+          "Cup": {
+            "name": "Cup",
+            "category": "container",
+            "location": [
+              2,
+              0,
+              0.5
+            ],
+            "rotation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.5,
+              1.5,
+              1.5
+            ],
+            "dimensions": [
+              0.4,
+              0.4,
+              1.0
+            ],
+            "color": [
+              0.8,
+              0.8,
+              0.8,
+              1.0
+            ],
+            "material": null,
+            "visible": true,
+            "parent": null,
+            "rigid_body": false,
+            "collision_enabled": true,
+            "metadata": {}
+          }
+        },
+        "cameras": {
+          "Camera": {
+            "name": "Camera",
+            "location": [
+              6,
+              -6,
+              5
+            ],
+            "target": [
+              0,
+              0,
+              0
+            ],
+            "fov_degrees": 50
+          }
+        },
+        "timestamp": 1,
+        "metadata": {},
+        "lights": {}
+      }
+    }
+  ],
+  "summary": {
+    "constraint_solver": {
+      "tasks": 4,
+      "task_success_rate": 1.0,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.0,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.0027377999940654263,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    },
+    "deterministic_verifier": {
+      "tasks": 4,
+      "task_success_rate": 0.75,
+      "agent_acceptance_rate": 0.75,
+      "false_acceptance_rate": 0.0,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.0022794499818701297,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    },
+    "dynamic_scene_graph": {
+      "tasks": 4,
+      "task_success_rate": 0.75,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.25,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.0014362749934662133,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    },
+    "pure_visual": {
+      "tasks": 4,
+      "task_success_rate": 0.75,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.25,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.0006437749834731221,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    },
+    "scene_memory": {
+      "tasks": 4,
+      "task_success_rate": 0.75,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.25,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.0005933000211371109,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    },
+    "verigraph3d": {
+      "tasks": 4,
+      "task_success_rate": 1.0,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.0,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.0026295749994460493,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    },
+    "verigraph3d_active": {
+      "tasks": 4,
+      "task_success_rate": 1.0,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.0,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.002645349988597445,
+      "mean_rollbacks": 0,
+      "mean_observations": 0.25
+    },
+    "verigraph3d_full": {
+      "tasks": 4,
+      "task_success_rate": 1.0,
+      "agent_acceptance_rate": 1.0,
+      "false_acceptance_rate": 0.0,
+      "mean_actions": 1.25,
+      "mean_elapsed_seconds": 0.00277542500407435,
+      "mean_rollbacks": 0,
+      "mean_observations": 0
+    }
+  }
+}

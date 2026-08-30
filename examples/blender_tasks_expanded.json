@@ -1,0 +1,714 @@
+{
+  "schema_version": "1.0",
+  "dataset": {
+    "name": "VeriGraph3D-Blender-24",
+    "version": "1.0",
+    "task_count": 24,
+    "category_counts": {
+      "camera": 2,
+      "compound": 1,
+      "create": 1,
+      "delete": 1,
+      "light": 2,
+      "material": 3,
+      "move": 4,
+      "place_on": 4,
+      "rotate": 3,
+      "scale": 3
+    }
+  },
+  "tasks": [
+    {
+      "id": "blender_move_01",
+      "instruction": "移动椅子到[1.5, -1.0, 0.455]",
+      "initial_scene": {},
+      "seed": 1101,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "location",
+          "expected": [
+            1.5,
+            -1.0,
+            0.455
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "move",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_move_02",
+      "instruction": "移动椅子到[2.5, -1.8, 0.455]",
+      "initial_scene": {},
+      "seed": 1102,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "location",
+          "expected": [
+            2.5,
+            -1.8,
+            0.455
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "move",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_move_03",
+      "instruction": "移动椅子到[1.5, -2.0, 0.455]",
+      "initial_scene": {},
+      "seed": 1103,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "location",
+          "expected": [
+            1.5,
+            -2.0,
+            0.455
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "move",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_move_04",
+      "instruction": "移动椅子到[2.8, 0.0, 0.455]",
+      "initial_scene": {},
+      "seed": 1104,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "location",
+          "expected": [
+            2.8,
+            0.0,
+            0.455
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "move",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_rotate_01",
+      "instruction": "旋转椅子到0.5弧度",
+      "initial_scene": {},
+      "seed": 1201,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "rotation",
+          "expected": [
+            0,
+            0,
+            0.5
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "rotate",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_rotate_02",
+      "instruction": "旋转椅子到1.0弧度",
+      "initial_scene": {},
+      "seed": 1202,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "rotation",
+          "expected": [
+            0,
+            0,
+            1.0
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "rotate",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_rotate_03",
+      "instruction": "旋转椅子到1.5708弧度",
+      "initial_scene": {},
+      "seed": 1203,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "rotation",
+          "expected": [
+            0,
+            0,
+            1.5708
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "rotate",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_scale_01",
+      "instruction": "缩放椅子为0.8倍",
+      "initial_scene": {},
+      "seed": 1301,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "scale",
+          "expected": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "scale",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_scale_02",
+      "instruction": "缩放椅子为1.1倍",
+      "initial_scene": {},
+      "seed": 1302,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "scale",
+          "expected": [
+            1.1,
+            1.1,
+            1.1
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "scale",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_scale_03",
+      "instruction": "缩放椅子为1.25倍",
+      "initial_scene": {},
+      "seed": 1303,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "scale",
+          "expected": [
+            1.25,
+            1.25,
+            1.25
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "scale",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_place_01",
+      "instruction": "将椅子无碰撞放到桌面",
+      "initial_scene": {},
+      "seed": 1401,
+      "required": [
+        [
+          "ABWS__chair_01",
+          "on_top_of",
+          "ABWS__desk_01"
+        ]
+      ],
+      "forbidden": [
+        [
+          "ABWS__chair_01",
+          "intersecting",
+          "ABWS__desk_01"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "place_on",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_place_02",
+      "instruction": "将椅子无碰撞放到桌面",
+      "initial_scene": {},
+      "seed": 1402,
+      "required": [
+        [
+          "ABWS__chair_01",
+          "on_top_of",
+          "ABWS__desk_01"
+        ]
+      ],
+      "forbidden": [
+        [
+          "ABWS__chair_01",
+          "intersecting",
+          "ABWS__desk_01"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "place_on",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_place_03",
+      "instruction": "将椅子无碰撞放到桌面",
+      "initial_scene": {},
+      "seed": 1403,
+      "required": [
+        [
+          "ABWS__chair_01",
+          "on_top_of",
+          "ABWS__desk_01"
+        ]
+      ],
+      "forbidden": [
+        [
+          "ABWS__chair_01",
+          "intersecting",
+          "ABWS__desk_01"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "place_on",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_place_04",
+      "instruction": "将椅子无碰撞放到桌面",
+      "initial_scene": {},
+      "seed": 1404,
+      "required": [
+        [
+          "ABWS__chair_01",
+          "on_top_of",
+          "ABWS__desk_01"
+        ]
+      ],
+      "forbidden": [
+        [
+          "ABWS__chair_01",
+          "intersecting",
+          "ABWS__desk_01"
+        ]
+      ],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "place_on",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_material_01",
+      "instruction": "修改椅子颜色为[1.0, 0.0, 0.0, 1.0]",
+      "initial_scene": {},
+      "seed": 1501,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "ABWS__chair_01.color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [],
+      "metadata": {
+        "category": "material",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_material_02",
+      "instruction": "修改椅子颜色为[0.0, 0.3, 1.0, 1.0]",
+      "initial_scene": {},
+      "seed": 1502,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "ABWS__chair_01.color": [
+          0.0,
+          0.3,
+          1.0,
+          1.0
+        ]
+      },
+      "actions": [],
+      "metadata": {
+        "category": "material",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_material_03",
+      "instruction": "修改椅子颜色为[0.1, 0.8, 0.2, 1.0]",
+      "initial_scene": {},
+      "seed": 1503,
+      "required": [],
+      "forbidden": [],
+      "visual": {
+        "ABWS__chair_01.color": [
+          0.1,
+          0.8,
+          0.2,
+          1.0
+        ]
+      },
+      "actions": [],
+      "metadata": {
+        "category": "material",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_camera_01",
+      "instruction": "设置相机视场角为45.0",
+      "initial_scene": {},
+      "seed": 1601,
+      "required": [
+        {
+          "subject": "ABWS__camera_main",
+          "predicate": "fov_degrees",
+          "expected": 45.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "camera",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_camera_02",
+      "instruction": "设置相机视场角为65.0",
+      "initial_scene": {},
+      "seed": 1602,
+      "required": [
+        {
+          "subject": "ABWS__camera_main",
+          "predicate": "fov_degrees",
+          "expected": 65.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "camera",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_light_01",
+      "instruction": "设置主灯能量为600.0",
+      "initial_scene": {},
+      "seed": 1701,
+      "required": [
+        {
+          "subject": "ABWS__key_light",
+          "predicate": "energy",
+          "expected": 600.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "light",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_light_02",
+      "instruction": "设置主灯能量为1400.0",
+      "initial_scene": {},
+      "seed": 1702,
+      "required": [
+        {
+          "subject": "ABWS__key_light",
+          "predicate": "energy",
+          "expected": 1400.0,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [],
+      "metadata": {
+        "category": "light",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_create_01",
+      "instruction": "创建蓝色圆柱花瓶",
+      "initial_scene": {},
+      "seed": 1801,
+      "required": [
+        {
+          "subject": "ABWS__vase_01",
+          "predicate": "exists",
+          "expected": true,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "ABWS__vase_01.color": [
+          0.0,
+          0.3,
+          1.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "create_object",
+          "target": "vase_01",
+          "reference": null,
+          "parameters": {
+            "primitive": "cylinder",
+            "category": "vase",
+            "dimensions": [
+              0.4,
+              0.4,
+              0.8
+            ],
+            "location": [
+              1.0,
+              -2.0,
+              0.4
+            ],
+            "color": [
+              0.0,
+              0.3,
+              1.0,
+              1.0
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "category": "create",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_delete_01",
+      "instruction": "删除授权临时对象",
+      "initial_scene": {},
+      "seed": 1901,
+      "required": [
+        {
+          "subject": "ABWS__temp_01",
+          "predicate": "exists",
+          "expected": false,
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {},
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "delete_object",
+          "target": "ABWS__temp_01",
+          "reference": null,
+          "parameters": {}
+        }
+      ],
+      "metadata": {
+        "category": "delete",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    },
+    {
+      "id": "blender_compound_01",
+      "instruction": "移动、旋转并修改椅子颜色",
+      "initial_scene": {},
+      "seed": 2001,
+      "required": [
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "location",
+          "expected": [
+            1.6,
+            -1.8,
+            0.455
+          ],
+          "tolerance": 0.001
+        },
+        {
+          "subject": "ABWS__chair_01",
+          "predicate": "rotation",
+          "expected": [
+            0,
+            0,
+            0.8
+          ],
+          "tolerance": 0.001
+        }
+      ],
+      "forbidden": [],
+      "visual": {
+        "ABWS__chair_01.color": [
+          1.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "actions": [
+        {
+          "id": "action_001",
+          "type": "move_object",
+          "target": "ABWS__chair_01",
+          "reference": null,
+          "parameters": {
+            "location": [
+              1.6,
+              -1.8,
+              0.455
+            ]
+          }
+        },
+        {
+          "id": "action_002",
+          "type": "rotate_object",
+          "target": "ABWS__chair_01",
+          "reference": null,
+          "parameters": {
+            "rotation": [
+              0,
+              0,
+              0.8
+            ]
+          }
+        },
+        {
+          "id": "action_003",
+          "type": "set_material",
+          "target": "ABWS__chair_01",
+          "reference": null,
+          "parameters": {
+            "color": [
+              1.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        }
+      ],
+      "metadata": {
+        "category": "compound",
+        "backend": "agentblender_atomic",
+        "source_scene": "abws_test_fixture"
+      }
+    }
+  ]
+}
